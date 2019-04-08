@@ -1,0 +1,24 @@
+{
+  "name": "webtesting-i-challenge",
+  "version": "1.0.0",
+  "description": "Web Testing I Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larynab/webtesting-i-challenge"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Laryna Billinghurst",
+  "bugs": {
+    "url": "https://github.com/LambdaSchool/webtesting-i-challenge/issues"
+  },
+  "homepage": "https://github.com/larynab/webtesting-i-challenge/blob/master/README.md",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
