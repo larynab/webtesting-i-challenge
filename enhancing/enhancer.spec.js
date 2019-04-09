@@ -1,6 +1,10 @@
 const { honest, add, repair } = require('./enhancer.js');
 //arrange, act, assert
 
+it.todo('repair item to 100');
+it.todo('item success with enchancement');
+it.todo('item enhancement failure consequence');
+
 //test ADD
 // test('add 2 and 2', function() {
 //     //arrange
@@ -18,6 +22,9 @@ const { honest, add, repair } = require('./enhancer.js');
 // console.log('The sum is:', sum);
 it('should add 2 numbers', () => {
     expect(add(2, 2)).toBe(4);
+    expect(add(1, 2)).toBe(3);
+    expect(add(-1, 2)).toBe(1);
+    expect(add(0, 0)).toBe(0);
 })
 
 
