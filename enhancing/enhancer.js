@@ -3,12 +3,9 @@ module.exports = {
   fail,
   repair,
   get,
-  honest
+  honest,
+  add
 };
-
-function honest() {
-  return true;
-}
 
 function succeed(item) {
   return { ...item };
@@ -25,3 +22,12 @@ function repair(item) {
 function get(item) {
   return { ...item };
 }
+
+function honest() {
+  return true;
+}
+
+function add(a, b) {
+  return a + b;
+}
+

@@ -1,10 +1,28 @@
-const { honest } = require('./enhancer.js');
-// test away!
-//arrange
-//act
-//assert
+const { honest, add, repair } = require('./enhancer.js');
+//arrange, act, assert
+
+//test ADD
+// test('add 2 and 2', function() {
+//     //arrange
+//     const expected = 4;
+//     const value1 = 2;
+//     const value2 = 2;
+//     //act
+//     const sum = add(value1, value2);
+//     //assert
+//     expect(sum).toEqual(expected)
+// })
+
+//ADD
+// const sum = add(2, 2);
+// console.log('The sum is:', sum);
+it('should add 2 numbers', () => {
+    expect(add(2, 2)).toBe(4);
+})
+
+
+//HONEST
 describe('honest function', () => {
-    // test case
     test('an honest function should always tell the truth', () => {
       expect(honest()).toBeTruthy();
     });
