@@ -3,7 +3,12 @@ module.exports = {
   fail,
   repair,
   get,
+  honest
 };
+
+function honest() {
+  return true;
+}
 
 function succeed(item) {
   return { ...item };
