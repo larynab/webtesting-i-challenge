@@ -20,6 +20,11 @@ it.todo('item enhancement failure consequence');
 //ADD
 // const sum = add(2, 2);
 // console.log('The sum is:', sum);
+it('should calculate the sum of any number of arguments separated by comma', () => {
+  expect(add(1, 2, 3)).toBe(6);
+  expect(add(1, 2, 3, 4)).toBe(10);
+});
+
 it('should add 2 numbers', () => {
     expect(add(2, 2)).toBe(4);
     expect(add(1, 2)).toBe(3);
