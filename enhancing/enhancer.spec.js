@@ -1,11 +1,19 @@
 const { honest, add, repair } = require('./enhancer.js');
 //arrange, act, assert
 
+//REPAIR ITEM
+describe('Repair Item', () => {
+//TODO
 it.todo('repair item to 100');
 it.todo('item success with enchancement');
 it.todo('item enhancement failure consequence');
+})
 
-//test ADD
+//ADD
+describe('add', () => {
+//old example
+// const sum = add(2, 2);
+// console.log('The sum is:', sum);
 // test('add 2 and 2', function() {
 //     //arrange
 //     const expected = 4;
@@ -16,22 +24,21 @@ it.todo('item enhancement failure consequence');
 //     //assert
 //     expect(sum).toEqual(expected)
 // })
-
-//ADD
-// const sum = add(2, 2);
-// console.log('The sum is:', sum);
 it('should calculate the sum of any number of arguments separated by comma', () => {
   expect(add(1, 2, 3)).toBe(6);
   expect(add(1, 2, 3, 4)).toBe(10);
 });
-
 it('should add 2 numbers', () => {
     expect(add(2, 2)).toBe(4);
     expect(add(1, 2)).toBe(3);
     expect(add(-1, 2)).toBe(1);
     expect(add(0, 0)).toBe(0);
 })
-
+it('should calculate the sum of any number of arguments in an array', () => {
+  expect(add([1, 2, 3])).toBe(6);
+  expect(add([1, 2, 3, 4])).toBe(10);
+});
+})
 
 //HONEST
 describe('honest function', () => {
